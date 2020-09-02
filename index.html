@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>short keys</title>
+	</head>
+	<body>
+		<h1>press any key here...</h1>
+		<input type="text" onkeydown="set(event)"/>
+		<p>key-code is below</p>
+		<h1 id="print"></h1>
+		<script>
+			function set(e){
+				document.getElementById("print").innerHTML=e.which;
+			}
+			// this is block scope
+			//{
+			//	var x = 35; 
+			//}
+		</script>
+	</body>
+</html>
